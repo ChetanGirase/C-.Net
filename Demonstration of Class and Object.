@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace classandobj
+{
+    public class Program
+    {
+       public  int rollno=21;
+       public   string name="Chetan";
+       public string course="BCA";
+       public   int age = 20;
+       
+        public void display()
+        {
+            Console.WriteLine("Roll No :"+rollno);
+            Console.WriteLine("Name :" + name);
+            Console.WriteLine("Course :" + course);
+            Console.WriteLine("age :" + age);
+        }
+    }
+   public class studinfo
+    {
+       public static void Main(string[] args)
+        {
+            Program p1 = new Program();
+            p1.display();
+            Console.ReadLine();
+        }
+    }
+}
