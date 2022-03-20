@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace swapingusingmethoverloading
+{
+    class demo
+    {
+        public int temp;
+        public float t;
+        public void swapdis(int a, int b)
+        {
+            Console.WriteLine("Numbers Before Swapping");
+            Console.WriteLine("a:"+a);
+            Console.WriteLine("b:" + b);
+
+            temp = a;
+            a = b;
+            b = temp;
+            Console.WriteLine("Numbers after Swapping");
+            Console.WriteLine("a:"+a);
+            Console.WriteLine("b:"+b);
+        }
+
+        public void swapdis(float x, float y)
+        {
+            Console.WriteLine("Numbers Before Swapping");
+            Console.WriteLine("x:" + x);
+            Console.WriteLine("y:" + y);
+            t = x;
+            x= y;
+            y= t;
+            Console.WriteLine("Numbers after Swapping");
+            Console.WriteLine("x:" + x);
+            Console.WriteLine("y:" + y);
+        }
+    }
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            demo d1 = new demo();
+            d1.swapdis(10,20);
+            d1.swapdis(2.1f,2.6f);
+            Console.ReadLine();
+        }
+    }
+}
