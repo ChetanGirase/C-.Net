@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace function
+{
+    class Program
+    {
+           int i,sum,temp, j, greater;
+           int[] a = { 12, 23, 65, 45 };
+           void print()
+           {
+              for (i = 0; i < 4; i++)
+               {
+                   sum = sum + a[i];
+               }
+               Console.WriteLine(sum);
+           }
+           void max()
+           {
+               for (i = 0; i < 4; i++)
+               {
+                   if (a[i] > greater)
+                   {
+                       greater = a[i];
+                   }
+                   else
+                   {
+                       Console.WriteLine(greater);
+                   }
+               }
+           }
+
+        static void Main(string[] args)
+        {
+            Program m1 = new Program();
+            m1.print();
+            m1.max();
+            Console.ReadLine();
+        }
+    }
+}
