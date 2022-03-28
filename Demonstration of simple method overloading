@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace methodoverloading
+{
+    class demo
+    {
+        public int c, d;
+
+        public void sum(int a, int b)
+        {
+            c = a + b;
+            Console.WriteLine(c);
+        }
+        public void sum(int a, int b, int e)
+        {
+            d = a + b + e;
+            Console.WriteLine(d);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            demo d1 = new demo();
+            d1.sum(2,4,6);
+            d1.sum(5,10);
+            Console.ReadLine();
+        }
+    }
+}
