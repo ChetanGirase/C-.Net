@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace methooverriding
+{
+    class demo
+    {
+        public void display()
+        {
+            Console.WriteLine("Hundai i20");
+        }
+    }
+    class demo2 : demo
+    {
+        public void display()
+        {
+            Console.WriteLine("Mahendra Scorpio");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            demo2 d = new demo2();
+            d.display();
+            Console.ReadLine();
+        }
+    }
+}
