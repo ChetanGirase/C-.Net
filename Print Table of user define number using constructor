@@ -1,0 +1,36 @@
+	//Write a C#.Net Program to accept user Define Number and print table of given number. Value should be accept as early class objects created
+    
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace constructorexample
+{
+    class table
+    {
+       
+        table(int a)
+        {
+          
+       
+            Console.WriteLine("table of  "+a+ " is:");
+            for (int i = 1; i <= 10; i++)
+            {
+               
+                Console.WriteLine( a * i);
+
+            }
+        }
+        static void Main(string[] args)
+        {
+            int num;
+              Console.WriteLine("Enter the number: ");
+            num = int.Parse(Console.ReadLine());
+            table t1 = new table(num);
+            Console.ReadLine();
+        }
+    }
+}
+
+
