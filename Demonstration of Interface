@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace @interface
+{
+    class student
+    {
+        public string name;
+        public string class1;
+        public void showinfo() 
+        {
+            name = "Chetan";
+            class1 = "SYBCA";
+            Console.WriteLine("Student Name: " + name);
+            Console.WriteLine("Class:" + class1);
+        }
+    }
+    interface exam
+    {
+        
+        void showsub();
+    }
+    class result:student,exam
+    {
+         
+        
+        public void showsub()
+        {
+            
+            Console.WriteLine("C#.net");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            result r1 = new result();
+            r1.showinfo();
+            r1.showsub();
+            Console.ReadLine();
+        }
+    }
+}
