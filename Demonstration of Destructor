@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace constructor
+{
+    class defconstructor
+    {
+        defconstructor()
+        {
+            Console.WriteLine("Cunstructor called.");
+        }
+      ~defdistructor()
+        {
+           Console.WriteLine(“Destructor called”);
+           Console.ReadLine();
+        }
+        static void Main(string[] args)
+        {
+            defconstructor d1 = new defconstructor();
+            
+        }
+    }
+}
