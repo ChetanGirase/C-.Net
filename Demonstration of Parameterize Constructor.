@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace constructor
+{
+    class defconstructor
+    {
+        defconstructor( int a, int b)
+        {
+            int c = a + b; ;
+            Console.WriteLine(c);
+           
+        }
+        static void Main(string[] args)
+        {
+            defconstructor d1 = new defconstructor(12,12);
+            Console.ReadLine();
+        }
+    }
+}
+
