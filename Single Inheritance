@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace inheritance
+{
+    public class stud
+    {
+        public string name = "chetan";
+
+        public string class1 = "sybca";
+    }
+    
+    class exam : stud
+    {
+      public string sub = "math";
+      public void display()
+      {
+        Console.WriteLine(" Name= " + name + " class= " + class1 + " subject " + sub);
+        Console.ReadLine();
+      }
+    }
+    class program
+        {
+            static void Main(string[] args)
+            {
+                exam s1 = new exam();
+                //  s1.show();
+                s1.display();
+            }
+        }
+    }
